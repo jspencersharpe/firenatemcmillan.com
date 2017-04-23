@@ -16,7 +16,7 @@
     "docs": "typedoc --options typedoc.json src/app/app.component.ts",
     "start:hmr": "npm run server -- --hot",
     "start": "node server.js",
-    "postinstall": "npm run build"
+    "preinstall": "npm run build"
   },
   "dependencies": {
 
