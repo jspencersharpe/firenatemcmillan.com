@@ -129,7 +129,7 @@ module.exports = function makeWebpackConfig() {
       // todo: change the loader to something that adds a hash to images
       {test: /\.html$/, loader: 'raw-loader',  exclude: root('src', 'public')},
 
-      {test: /\.pug$/, loader: 'pug-html-loader'}
+      {test: /\.pug$/, loaders: ['raw-loader', 'pug-html-loader']}
     ]
   };
 
